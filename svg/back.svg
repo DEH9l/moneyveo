@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="14.4625pt" height="11.6437pt" viewBox="0 0 14.4625 11.6437">
+<g enable-background="new">
+<g>
+<g id="Layer-1" data-name="Layer">
+<clipPath id="cp0">
+<path transform="matrix(1,0,0,-1,0,11.6437)" d="M 0 11.644 L 14.462 11.644 L 14.462 0 L 0 0 Z "/>
+</clipPath>
+<g clip-path="url(#cp0)">
+<path transform="matrix(1,0,0,-1,13.7124,5.8219997)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000e0c" d="M 0 0 L -12.65 0 "/>
+<path transform="matrix(1,0,0,-1,5.2187,10.8933)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000e0c" d="M 0 0 L -4.469 5.062 L -4.469 5.081 L 0 10.144 "/>
+</g>
+</g>
+</g>
+</g>
+</svg>

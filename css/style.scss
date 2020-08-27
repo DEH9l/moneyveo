@@ -1,0 +1,669 @@
+@import "bootstrap.min.css";
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraLight.eot');
+  src: url('../fonts/Manrope-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+  url('../fonts/Manrope-ExtraLight.woff') format('woff'),
+  url('../fonts/Manrope-ExtraLight.ttf') format('truetype'),
+  url('../fonts/Manrope-ExtraLight.svg#Manrope-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraBold.eot');
+  src: url('../fonts/Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Manrope-ExtraBold.woff') format('woff'),
+  url('../fonts/Manrope-ExtraBold.ttf') format('truetype'),
+  url('../fonts/Manrope-ExtraBold.svg#Manrope-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Light.eot');
+  src: url('../fonts/Manrope-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Manrope-Light.woff2') format('woff2'),
+  url('../fonts/Manrope-Light.woff') format('woff'),
+  url('../fonts/Manrope-Light.ttf') format('truetype'),
+  url('../fonts/Manrope-Light.svg#Manrope-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Regular.eot');
+  src: url('../fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Manrope-Regular.woff2') format('woff2'),
+  url('../fonts/Manrope-Regular.woff') format('woff'),
+  url('../fonts/Manrope-Regular.ttf') format('truetype'),
+  url('../fonts/Manrope-Regular.svg#Manrope-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Bold.eot');
+  src: url('../fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Manrope-Bold.woff2') format('woff2'),
+  url('../fonts/Manrope-Bold.woff') format('woff'),
+  url('../fonts/Manrope-Bold.ttf') format('truetype'),
+  url('../fonts/Manrope-Bold.svg#Manrope-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Medium.eot');
+  src: url('../fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Manrope-Medium.woff2') format('woff2'),
+  url('../fonts/Manrope-Medium.woff') format('woff'),
+  url('../fonts/Manrope-Medium.ttf') format('truetype'),
+  url('../fonts/Manrope-Medium.svg#Manrope-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-SemiBold.eot');
+  src: url('../fonts/Manrope-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+  url('../fonts/Manrope-SemiBold.woff') format('woff'),
+  url('../fonts/Manrope-SemiBold.ttf') format('truetype'),
+  url('../fonts/Manrope-SemiBold.svg#Manrope-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body{
+  background-image: url("../svg/background.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-family: 'Manrope';
+}
+p[class$="__title"]{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.log-in{
+  color: gray;
+  padding: 15px 0;
+  vertical-align: baseline;
+  span{
+    padding-right: 10px;
+  }
+  .change-lang{
+    display: inline-block;
+    border: 1px gray solid;
+    border-radius: 50px;
+    padding: 2px;
+    box-sizing: content-box;
+    line-height: 0.5;
+  img {
+    width: 8px;
+    height: 5px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+  }
+  }
+  a{
+    &:hover{
+      color: #3D7EFE;
+    }
+    text-decoration: none;
+  }
+  img{
+    padding-right: 10px;
+  }
+}
+nav{
+  &:after{
+    content: "";
+    display: inline-block;
+    clear: both;
+  }
+}
+.logo{
+  padding-right: 65px;
+}
+.dropdown-menu.show{
+  background-color: #1b66ff;
+  top:89%;
+  border: none;
+  .dropdown-item{
+    &:hover{
+      background-color: #1b66ff;
+    }
+    color: white;
+    text-decoration: none;
+  }
+}
+.nav-item.dropdown.show{
+  background-color: #1b66ff;
+  border-radius: 5%;
+  .nav-link.dropdown-toggle{
+    color: white;
+    padding-bottom: 0;
+  }
+}
+.nav-item.dropdown{
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.navbar-expand-lg{
+  padding-left: 0;
+}
+.google{
+  margin-top: 3px;
+}
+.company-disc{
+  li{
+    list-style-image: url("../svg/bird.svg");
+  }
+}
+.shkot{
+  .shkot-icons{
+    max-width: 50px;
+    max-height: 50px;
+  }
+  span{
+    font-size: 12px;
+    padding-left: 15px;
+    display: inline-block;
+
+  }
+  a{
+    display: block;
+  }
+}
+.header__calc{
+  padding-top: 50px;
+  a{
+    text-decoration: none;
+  }
+  .open__bill{
+    background-color: #1b66ff;
+    color: white;
+    padding: 10px 0;
+    max-height: 40px;
+    font-size: 12px;
+    border-radius: 5%;
+    text-align: center;
+  }
+  .calc_proffit{
+    background-color: #00cc89;
+    color: white;
+    padding: 10px 0;
+    max-height: 40px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 5%;
+    text-align: center;
+  }
+  .header__play_video{
+    a {
+      color: #1b66ff;
+      text-decoration: none;
+    }
+    span{
+      color: #888d99;
+      text-align: right;
+    }
+  }
+}
+.about-company__text{
+  line-height: 40px;
+}
+.about-company_register{
+  font-size: 18px;
+a{
+  text-decoration: none;
+}
+  div{
+    background: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    &:first-of-type{
+      margin-bottom: 30px;
+    }
+  }
+  img{
+    padding: 0 50px;
+  }
+  .about-company_register__check{
+    background-color: #1b66ff;
+    margin-top: 30px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  }
+}
+.tariff-plans{
+  padding: 25px 30px;
+  .tariff-plans__container{
+    z-index: 0;
+  }
+  .tariff-plans__head{
+    background-color: #1b66ff;
+    color: white;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    span{
+      &:first-of-type{
+        font-size: 18px;
+      }
+      &:last-of-type{
+        font-size: 25px;
+      }
+    }
+    div{
+      font-size: 40px;
+    span{
+      &:last-of-type{
+        color: #0038a9;
+        font-size: 40px;
+      }
+    }
+    }
+}
+  .tariff-plans__text{
+    background-color: white;
+    position: relative;
+    bottom: 30px;
+    border-radius: 20px;
+    z-index: 1;
+    padding: 20px 30px;
+    line-height: 30px;
+  }
+  .tariff-plans__link{
+    text-decoration: none;
+    background-color: #00cc89;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 5px;
+    font-weight: bolder;
+  }
+}
+.our-value__title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.about-company__title,.all-what-you-need__title,.tariff-plans__head, .start-invest__title{
+/*  font-size: 40px;
+  font-weight: bold;
+  text-align: center;*/
+}
+  .our-value__item{
+    border-radius: 10px;
+    border: solid 3px #e4e7eb;
+    background-color: #f6f7fb;
+    text-align: center;
+    width: 193px;
+    padding: 20px;
+    max-height: 90px;
+    box-sizing: border-box;
+  img{
+    max-width: 100%;
+    max-height: 45px;
+  }
+}
+  .all-what-you-need__text{
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  .all-what-you-need__print-screen{
+    position: relative;
+    border-radius: 20px;
+    .all-what-you-need__print-screen__green-notification{
+      position: absolute;
+      top: 10%;
+      right: -5%;
+      max-width: 30%;
+      .green-notification-inner{
+        border-radius: 4px;
+        background-color: #00cc89;
+        color: white;
+        position: relative;
+        .green-notification-inner-slider{
+        img {
+          display: inline-block;
+          width: 20px;
+          height: 10px;
+          &:last-of-type{
+            transform: rotate(180deg);
+            display: inline-block;
+          }
+        }
+        div{
+          padding: 4px;
+          border-radius: 20px;
+          background-color: #afe5d6;
+          margin: 0 2px;
+          &:first-of-type{
+            background-color: white;
+          }
+        }
+      }
+        span{
+          &:first-of-type {
+            font-weight: 500;
+          }
+          &:last-of-type{
+            font-size: 14px;
+            font-weight: 200;
+          }
+          &:before{
+            border: 20px solid transparent;
+            border-right: 20px solid #00cc89;
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 40%;
+            left: -18%;
+          }
+        }
+      }
+    }
+  }
+  .all-what-you-need__print-screen__nav{
+    list-style: none;
+    color: #838fa9;
+    .all-what-you-need__print-screen__nav_item{
+      font-size: 10px;
+      border-right: 1px ridge #838fa9;
+      padding: 0 10px;
+      &:first-of-type{
+        border-right: none;
+      }
+      &:last-of-type{
+        border-right: none;
+      }
+    }
+  }
+
+.all-what-you-need__inner {
+  position: relative;
+  .all-what-you-need_print-screen__content__money-form__drop {
+    width: 12px;
+    height: 6px;
+    font-size: 5px;
+    box-sizing: border-box;
+  }
+  .all-what-you-need_print-screen__left-nav{
+    ul{
+      list-style: none;
+      font-size: 10px;
+      line-height: 3;
+      color: #838fa9
+    }
+    img{
+      width: 20px;
+    }
+    span{
+      font-size: 6px;
+      color: #838fa9;
+    }
+  }
+  .all-what-you-need_print-screen__content {
+    p {
+      font-size: 14px
+    }
+    .all-what-you-need_print-screen__content__money-form {
+      border: 1px solid #838fa9;
+      border-radius: 5px;
+      height: 30px;
+
+      .card-mon {
+        height: 16px;
+      }
+
+      div {
+        font-weight: 600;
+
+        &:first-of-type {
+          font-size: 12px;
+        }
+
+        &:last-of-type {
+          span {
+            &:last-of-type {
+              color: #838fa9;
+            }
+          }
+        }
+      }
+    }
+
+    .all-what-you-need_print-screen__content__total {
+      color: #838fa9;
+      font-size: 12px;
+    }
+  }
+  .all-what-you-need_print-screen__content__withdraw-form{
+    border: 1px solid #838fa9;
+    border-radius: 5px;
+    height: 30px;
+    div {
+      &:first-of-type {
+        border-right: 1px solid #838fa9;
+        span {
+          &:last-of-type {
+            background: #dadee6;
+            display: inline-block;
+            font-size: 10px;
+            margin: 5px;
+            padding: 0;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+  .all-what-you-need_print-screen__content__pay-chose{
+    font-size:16px;
+    border: 1px solid #838fa9;
+    border-radius: 5px;
+    height: 30px;
+    .pay-sys{
+        height: 16px;
+      }
+    }
+  .all-what-you-need_print-screen__content__sum-chose{
+    font-size:12px;
+    border: 1px solid #838fa9;
+    border-radius: 5px;
+    color: #838fa9;
+    height: 30px;
+    line-height: 2;
+  }
+  .all-what-you-need__print-screen__right{
+      .all-what-you-need__print-screen__right__item{
+        border-radius: 20px;
+        &:first-of-type {
+          color: white;
+          font-weight: 500;
+          background-color: #1b66ff;
+          div {
+            background-color: #518aff;
+            padding: 10px;
+            border-radius: 25px;
+
+            img {
+              filter: brightness(100);
+            }
+          }
+        }
+      }
+    }
+.start-invest{
+  .start-invest__item{
+    position: relative;
+    div{
+        background-color: #00cc89;
+        border-radius: 80px;
+        color: white;
+        position: absolute;
+        top: 20%;
+        left: 60%;
+         vertical-align: bottom;
+    }
+    .start-invest__item__header{
+      font-size: 29px;
+    }
+  }
+  .start-invest__icons{
+    font-size: 14px;
+    .start-invest__item__min-value{
+      background-color: #00cc89;
+      color: white;
+      border-radius: 5px;
+    }
+    img{
+      width: 25%;
+    }
+  }
+}
+.button-start-invest{
+  background-color: #1b66ff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
+}
+.for-indifferent{
+  div p{
+    font-size: 14px;
+  }
+a{
+  background-color: #1b66ff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size:12px;
+  font-weight: 500;
+  &:hover{
+    color: white;
+  }
+}
+}
+
+.custumers {
+  .custumers-sum {
+    color: #7a8599;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .custumers__stat {
+    .custumers__stat__item{
+    span{
+      vertical-align: top;
+    &:first-of-type {
+      font-size: 25px;
+      color: #7a8599;
+    }
+      &:last-of-type{
+        font-size: 14px;
+      }
+  }
+    }
+  }
+  .custumers__review{
+    border-radius: 5px ;
+  }
+  .custumers__review_rating-stars{
+    width: 15px;
+    margin-right: 3px;
+  }
+}
+.our-partners{
+  img{
+    width: 10%;
+  }
+}
+.why-vw{
+  .why-vw__items{
+    border-radius: 5px;
+  }
+}
+.partner-program{
+  .partner-program__head{
+    font-size: 30px;
+  }
+  .partner-program__forvip__head{
+    font-size: 18px;
+  }
+  ul{
+    list-style: none;
+    padding-inline-start: 0;
+  }
+}
+.insurance{
+  .insurance__head{
+    font-size: 30px;
+  }
+}
+.question{
+  .question__item{
+    border-radius: 5px;
+  }
+}
+.apps{
+  background-color: #1b66ff;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 100px;
+  p{
+    font-size: 35px;
+  }
+  img{
+   position: absolute;
+    bottom: 0;
+    right: 5%;
+    z-index: 1;
+  }
+  .apps__bg-phone{
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    padding-bottom: 260px;
+    padding-top: 30px;
+    color: white;
+    width: 20%;
+    }
+}

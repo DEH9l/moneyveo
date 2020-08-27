@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_2" width="93" height="93">
+
+<defs>
+    <clipPath  id="1">
+
+    <path id=""  clip-rule="evenodd" transform="matrix(1 0 0 1 0 0)"  d="M0 70L0 0L0 0L70 0L70 0L70 70L70 70L0 70z" />    </clipPath>
+    <clipPath  id="2">
+
+    <path id=""  clip-rule="evenodd" transform="matrix(1 0 0 1 0 0)"  d="M0 0L70 0L70 0L70 70L70 70L0 70z" />    </clipPath>
+</defs>
+
+<g transform="matrix(1.3333 0 0 1.3333 0 0)">
+	<g clip-path="url(#1)" >
+		<g clip-path="url(#2)" >
+    <path id=""  transform="matrix(1 0 0 -1 0 70)"  d="M67.7998 47.2285L24.4998 58.7755L24.4998 58.7755L2.499794 46.7755L2.499794 46.7755L2.156799 47.1185C 0.7637939 43.3415 -0.0002059937 39.2605 -0.0002059937 34.9995C -0.0002059937 30.5695 0.8317947 26.3355 2.332794 22.4345C 2.437798 22.6485 2.499794 22.7755 2.499794 22.7755L2.499794 22.7755L41.4998 12.7755L41.4998 12.7755L67.49979 22.7755L67.49979 22.7755L67.79079 22.7495C 69.2168 26.5635 69.99979 30.6895 69.99979 34.9995C 69.99979 39.3025 69.2198 43.4215 67.7998 47.2285" stroke="none" fill="#1B66FF" fill-rule="evenodd" />
+    <path id=""  transform="matrix(1 0 0 -1 0 70)"  d="M2.1123 47L67.8873 47C 62.9903 60.42 50.1143 70 35.0003 70C 19.8853 70 7.0093 60.42 2.1123 47" stroke="none" fill="#EBEFF5" fill-rule="evenodd" />
+    <path id=""  transform="matrix(1 0 0 -1 0 70)"  d="M67.8877 23L2.112701 23C 7.009705 9.58 19.8857 0 34.9997 0C 50.1147 0 62.9907 9.58 67.8877 23" stroke="none" fill="#FF5555" fill-rule="evenodd" />
+		</g>
+	</g>
+</g>
+</svg>

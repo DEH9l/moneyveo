@@ -1,0 +1,5 @@
+.idea
+*.psd
+tex.html
+*.zip
+*.png
