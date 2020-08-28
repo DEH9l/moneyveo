@@ -49,10 +49,11 @@
   font-style: normal;
   font-display: swap; }
 body {
-  background-image: url("../svg/background.jpg");
-  background-repeat: repeat-y;
-  background-size: 100%;
   font-family: 'Manrope'; }
+
+section {
+  background-image: url("../svg/background.jpg");
+  background-size: 100%; }
 
 p[class$="__title"] {
   font-size: 40px;
@@ -468,8 +469,8 @@ nav:after {
   position: relative;
   margin-top: 100px; }
   .apps p {
-    font-size: 35px; }
-  .apps img {
+    font-size: 30px; }
+  .apps .apps_right-phone {
     position: absolute;
     bottom: 0;
     right: 5%;
@@ -482,5 +483,26 @@ nav:after {
     padding-top: 30px;
     color: white;
     width: 20%; }
+  .apps .apps__links a {
+    border-radius: 5px; }
+
+/*
+foooooooooooooooooooooooooooooter*/
+footer .footer__left-menu ul {
+  list-style: none; }
+footer .footer__left-menu li {
+  padding-bottom: 15px;
+  font-weight: lighter; }
+  footer .footer__left-menu li:first-of-type {
+    font-weight: bold; }
+footer .footer__right-menu .footer_right-menu__license {
+  border-radius: 20px;
+  line-height: 1; }
+footer .footer__right-menu .footer__right-menu_adress img {
+  width: 20px;
+  height: 30px; }
+footer .footer__bottom-menu {
+  font-size: 14px;
+  border-top: 1px solid #dbdee5; }
 
 /*# sourceMappingURL=style.css.map */
