@@ -106,11 +106,11 @@ p[class$="__title"]{
 }
 .log-in{
   color: gray;
-  padding: 15px 0;
+  padding: 15px;
   vertical-align: baseline;
-  span{
-    padding-right: 10px;
-  }
+/*  span{
+       padding-right: 10px;
+     }*/
   .change-lang{
     display: inline-block;
     border: 1px gray solid;
@@ -185,6 +185,7 @@ nav{
   .shkot-icons{
     max-width: 50px;
     max-height: 50px;
+    display: inline-block;
   }
   span{
     font-size: 12px;
@@ -197,28 +198,39 @@ nav{
   }
 }
 .header__calc{
-  padding-top: 50px;
   a{
     text-decoration: none;
   }
   .open__bill{
     background-color: #1b66ff;
-    color: white;
-    padding: 10px 0;
-    max-height: 40px;
     font-size: 12px;
     border-radius: 5%;
     text-align: center;
+    max-width: 270px;
+    width: 100%;
+    font-weight: bolder;
+    a{
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+    }
   }
   .calc_proffit{
     background-color: #00cc89;
     color: white;
-    padding: 10px 0;
-    max-height: 40px;
     box-sizing: border-box;
+    padding: 10px 0;
     font-size: 12px;
     border-radius: 5%;
+    width: 100%;
     text-align: center;
+    max-width: 270px;
+    font-weight: bolder;
+    a{
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+    }
   }
   .header__play_video{
     a {
@@ -569,6 +581,9 @@ a{
   div p{
     font-size: 14px;
   }
+  img{
+    width: 100%;
+  }
 a{
   background-color: #1b66ff;
   color: white;
@@ -662,6 +677,7 @@ a{
     position: absolute;
     bottom: 0;
     right: 3%;
+    background-color: white;
     padding-bottom: 260px;
     padding-top: 30px;
     color: white;
@@ -679,35 +695,191 @@ a{
 
 /*
 foooooooooooooooooooooooooooooter*/
-footer{
+footer {
+  font-weight: lighter;
 
-  .footer__left-menu{
-    ul{
+  .footer__left-menu {
+    ul {
       list-style: none;
     }
-    li{
+
+    li {
       padding-bottom: 15px;
-      font-weight: lighter;
-      &:first-of-type{
+      text-transform: capitalize;
+
+      &:first-of-type {
         font-weight: bold;
       }
     }
   }
-  .footer__right-menu{
 
-  .footer_right-menu__license{
-    border-radius: 20px;
-    line-height: 1;
-  }
-    .footer__right-menu_adress{
-      img{
+  .footer__right-menu {
+
+    .footer_right-menu__license {
+      border-radius: 20px;
+      line-height: 1;
+    }
+
+    .footer__right-menu_adress {
+      img {
         width: 20px;
         height: 30px;
       }
     }
   }
+
   .footer__bottom-menu{
     font-size: 14px;
     border-top: 1px solid #dbdee5;
+    li {
+      &:first-of-type{
+        &:before{
+          display: none;
+        }
+      }
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+        margin-bottom: 2px;
+        border-radius: 40px;
+        background-color: black;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  p[class$="__title"] {
+    font-size: 30px;
+  }
+  p[class$="__head"] {
+    font-size: 24px;
+  }
+  .log-in {
+    a {
+      font-size: 10px;
+    }
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .header__play_video{
+    img {
+      width: 50%;
+    }
+  }
+  .for-indifferent {
+    p[class$="__title"] {
+      font-size: 20px;
+    }
+
+    .about-company__text {
+      font-size: 12px;
+      line-height: 25px;
+    }
+
+    .our-value__item {
+      padding: 1px;
+      max-height: 90px;
+      box-sizing: content-box;
+
+      img {
+        max-width: 100%;
+        max-height: 30px;
+      }
+    }
+
+    .all-what-you-need {
+      &__text {
+        font-size: 12px;
+        font-weight: normal;
+      }
+
+      .all-what-you-need_print-screen__left-nav {
+        d: none;
+      }
+
+      .all-what-you-need__print-screen__green-notification {
+        display: none;
+
+      }
+    }
+
+    .our-partners {
+      img {
+        width: 30%;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .partner-program {
+      img {
+        display: none;
+      }
+    }
+
+    .insurance {
+      img {
+        display: none;
+      }
+
+      .insurance__head {
+        font-size: 18px;
+      }
+    }
+
+    .apps {
+      margin-top: 0;
+
+      p {
+        font-size: 16px;
+      }
+
+      .apps__bg-phone {
+        background-color: transparent;
+      }
+    }
+
+    .apps .apps_right-phone {
+      right: 0;
+    }
+  }
+  .partner-program .partner-program__head, .insurance .insurance__head{
+    font-size:24px;
+    text-align: center;
+  }
+  .shkot{
+    .shkot-icons {
+      display: none;
+    }
+    img {
+      width: 16px;
+    }
+  }
+  .our-value__item {
+    padding: 2px;
+  }
+  .all-what-you-need_print-screen__left-nav, .all-what-you-need__print-screen__green-notification {
+    display: none;
+  }
+  .start-invest .start-invest__item .start-invest__item__header {
+    font-size: 18px;
+  }
+  .header__play_video{
+    a{
+      font-size: 12px;
+    }
+  }
+  .for-indifferent img {
+    width: 50%;
+  }
+  .apps{
+    margin-top: 20px;
+  }
+  .apps p{
+    font-size:18px;
   }
 }

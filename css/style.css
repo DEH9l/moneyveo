@@ -62,10 +62,11 @@ p[class$="__title"] {
 
 .log-in {
   color: gray;
-  padding: 15px 0;
-  vertical-align: baseline; }
-  .log-in span {
-    padding-right: 10px; }
+  padding: 15px;
+  vertical-align: baseline;
+  /*  span{
+         padding-right: 10px;
+       }*/ }
   .log-in .change-lang {
     display: inline-block;
     border: 1px gray solid;
@@ -126,7 +127,8 @@ nav:after {
 
 .shkot .shkot-icons {
   max-width: 50px;
-  max-height: 50px; }
+  max-height: 50px;
+  display: inline-block; }
 .shkot span {
   font-size: 12px;
   padding-left: 15px;
@@ -134,33 +136,41 @@ nav:after {
 .shkot a {
   display: block; }
 
-.header__calc {
-  padding-top: 50px; }
-  .header__calc a {
-    text-decoration: none; }
-  .header__calc .open__bill {
-    background-color: #1b66ff;
+.header__calc a {
+  text-decoration: none; }
+.header__calc .open__bill {
+  background-color: #1b66ff;
+  font-size: 12px;
+  border-radius: 5%;
+  text-align: center;
+  max-width: 270px;
+  width: 100%;
+  font-weight: bolder; }
+  .header__calc .open__bill a {
     color: white;
-    padding: 10px 0;
-    max-height: 40px;
-    font-size: 12px;
-    border-radius: 5%;
-    text-align: center; }
-  .header__calc .calc_proffit {
-    background-color: #00cc89;
+    text-decoration: none;
+    padding: 10px 0; }
+.header__calc .calc_proffit {
+  background-color: #00cc89;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px 0;
+  font-size: 12px;
+  border-radius: 5%;
+  width: 100%;
+  text-align: center;
+  max-width: 270px;
+  font-weight: bolder; }
+  .header__calc .calc_proffit a {
     color: white;
-    padding: 10px 0;
-    max-height: 40px;
-    box-sizing: border-box;
-    font-size: 12px;
-    border-radius: 5%;
-    text-align: center; }
-  .header__calc .header__play_video a {
-    color: #1b66ff;
-    text-decoration: none; }
-  .header__calc .header__play_video span {
-    color: #888d99;
-    text-align: right; }
+    text-decoration: none;
+    padding: 10px 0; }
+.header__calc .header__play_video a {
+  color: #1b66ff;
+  text-decoration: none; }
+.header__calc .header__play_video span {
+  color: #888d99;
+  text-align: right; }
 
 .about-company__text {
   line-height: 40px; }
@@ -415,6 +425,8 @@ nav:after {
 
 .for-indifferent div p {
   font-size: 14px; }
+.for-indifferent img {
+  width: 100%; }
 .for-indifferent a {
   background-color: #1b66ff;
   color: white;
@@ -479,6 +491,7 @@ nav:after {
     position: absolute;
     bottom: 0;
     right: 3%;
+    background-color: white;
     padding-bottom: 260px;
     padding-top: 30px;
     color: white;
@@ -488,21 +501,117 @@ nav:after {
 
 /*
 foooooooooooooooooooooooooooooter*/
-footer .footer__left-menu ul {
-  list-style: none; }
-footer .footer__left-menu li {
-  padding-bottom: 15px;
+footer {
   font-weight: lighter; }
-  footer .footer__left-menu li:first-of-type {
-    font-weight: bold; }
-footer .footer__right-menu .footer_right-menu__license {
-  border-radius: 20px;
-  line-height: 1; }
-footer .footer__right-menu .footer__right-menu_adress img {
-  width: 20px;
-  height: 30px; }
-footer .footer__bottom-menu {
-  font-size: 14px;
-  border-top: 1px solid #dbdee5; }
+  footer .footer__left-menu ul {
+    list-style: none; }
+  footer .footer__left-menu li {
+    padding-bottom: 15px;
+    text-transform: capitalize; }
+    footer .footer__left-menu li:first-of-type {
+      font-weight: bold; }
+  footer .footer__right-menu .footer_right-menu__license {
+    border-radius: 20px;
+    line-height: 1; }
+  footer .footer__right-menu .footer__right-menu_adress img {
+    width: 20px;
+    height: 30px; }
+  footer .footer__bottom-menu {
+    font-size: 14px;
+    border-top: 1px solid #dbdee5; }
+    footer .footer__bottom-menu li:first-of-type:before {
+      display: none; }
+    footer .footer__bottom-menu li:before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-right: 10px;
+      margin-bottom: 2px;
+      border-radius: 40px;
+      background-color: black; }
+
+@media screen and (max-width: 576px) {
+  p[class$="__title"] {
+    font-size: 30px; }
+
+  p[class$="__head"] {
+    font-size: 24px; }
+
+  .log-in a {
+    font-size: 10px; }
+
+  h1 {
+    font-size: 20px; }
+
+  .header__play_video img {
+    width: 50%; }
+
+  .for-indifferent p[class$="__title"] {
+    font-size: 20px; }
+  .for-indifferent .about-company__text {
+    font-size: 12px;
+    line-height: 25px; }
+  .for-indifferent .our-value__item {
+    padding: 1px;
+    max-height: 90px;
+    box-sizing: content-box; }
+    .for-indifferent .our-value__item img {
+      max-width: 100%;
+      max-height: 30px; }
+  .for-indifferent .all-what-you-need__text {
+    font-size: 12px;
+    font-weight: normal; }
+  .for-indifferent .all-what-you-need .all-what-you-need_print-screen__left-nav {
+    d: none; }
+  .for-indifferent .all-what-you-need .all-what-you-need__print-screen__green-notification {
+    display: none; }
+  .for-indifferent .our-partners img {
+    width: 30%;
+    padding-bottom: 1rem; }
+  .for-indifferent .partner-program img {
+    display: none; }
+  .for-indifferent .insurance img {
+    display: none; }
+  .for-indifferent .insurance .insurance__head {
+    font-size: 18px; }
+  .for-indifferent .apps {
+    margin-top: 0; }
+    .for-indifferent .apps p {
+      font-size: 16px; }
+    .for-indifferent .apps .apps__bg-phone {
+      background-color: transparent; }
+  .for-indifferent .apps .apps_right-phone {
+    right: 0; }
+
+  .partner-program .partner-program__head, .insurance .insurance__head {
+    font-size: 24px;
+    text-align: center; }
+
+  .shkot .shkot-icons {
+    display: none; }
+  .shkot img {
+    width: 16px; }
+
+  .our-value__item {
+    padding: 2px; }
+
+  .all-what-you-need_print-screen__left-nav, .all-what-you-need__print-screen__green-notification {
+    display: none; }
+
+  .start-invest .start-invest__item .start-invest__item__header {
+    font-size: 18px; }
+
+  .header__play_video a {
+    font-size: 12px; }
+
+  .for-indifferent img {
+    width: 50%; }
+
+  .apps {
+    margin-top: 20px; }
+
+  .apps p {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=style.css.map */
