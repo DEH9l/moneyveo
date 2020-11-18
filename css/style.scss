@@ -657,6 +657,13 @@ a{
 .question{
   .question__item{
     border-radius: 5px;
+    img{
+      &:first-of-type{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 }
 .apps{
@@ -679,7 +686,7 @@ a{
     right: 3%;
     background-color: white;
     padding-bottom: 260px;
-    padding-top: 30px;
+    padding-top: 60px;
     color: white;
     width: 20%;
     }
@@ -750,7 +757,11 @@ footer {
     }
   }
 }
-
+@media screen and(max-width: 1200px) {
+  .apps__bg-phone{
+    display: none;
+}
+}
 @media screen and(max-width: 576px) {
   p[class$="__title"] {
     font-size: 30px;
@@ -769,6 +780,12 @@ footer {
   .header__play_video{
     img {
       width: 50%;
+    }
+  }
+  .our-partners{
+    img {
+      width: 30%;
+      padding-bottom: 1rem;
     }
   }
   .for-indifferent {
@@ -799,7 +816,7 @@ footer {
       }
 
       .all-what-you-need_print-screen__left-nav {
-        d: none;
+/*        display: none;*/
       }
 
       .all-what-you-need__print-screen__green-notification {
@@ -807,14 +824,6 @@ footer {
 
       }
     }
-
-    .our-partners {
-      img {
-        width: 30%;
-        padding-bottom: 1rem;
-      }
-    }
-
     .partner-program {
       img {
         display: none;
@@ -882,4 +891,10 @@ footer {
   .apps p{
     font-size:18px;
   }
+}
+.toogle, .toogle1{
+  display: none;
+}
+.transform{
+  transform: rotate(180deg);
 }

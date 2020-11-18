@@ -474,6 +474,10 @@ nav:after {
 
 .question .question__item {
   border-radius: 5px; }
+  .question .question__item img:first-of-type {
+    display: inline-block;
+    width: 20px;
+    height: 20px; }
 
 .apps {
   background-color: #1b66ff;
@@ -493,7 +497,7 @@ nav:after {
     right: 3%;
     background-color: white;
     padding-bottom: 260px;
-    padding-top: 30px;
+    padding-top: 60px;
     color: white;
     width: 20%; }
   .apps .apps__links a {
@@ -531,6 +535,9 @@ footer {
       border-radius: 40px;
       background-color: black; }
 
+@media screen and (max-width: 1200px) {
+  .apps__bg-phone {
+    display: none; } }
 @media screen and (max-width: 576px) {
   p[class$="__title"] {
     font-size: 30px; }
@@ -546,6 +553,10 @@ footer {
 
   .header__play_video img {
     width: 50%; }
+
+  .our-partners img {
+    width: 30%;
+    padding-bottom: 1rem; }
 
   .for-indifferent p[class$="__title"] {
     font-size: 20px; }
@@ -563,12 +574,9 @@ footer {
     font-size: 12px;
     font-weight: normal; }
   .for-indifferent .all-what-you-need .all-what-you-need_print-screen__left-nav {
-    d: none; }
+    /*        display: none;*/ }
   .for-indifferent .all-what-you-need .all-what-you-need__print-screen__green-notification {
     display: none; }
-  .for-indifferent .our-partners img {
-    width: 30%;
-    padding-bottom: 1rem; }
   .for-indifferent .partner-program img {
     display: none; }
   .for-indifferent .insurance img {
@@ -613,5 +621,10 @@ footer {
 
   .apps p {
     font-size: 18px; } }
+.toogle, .toogle1 {
+  display: none; }
+
+.transform {
+  transform: rotate(180deg); }
 
 /*# sourceMappingURL=style.css.map */
