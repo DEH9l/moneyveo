@@ -91,7 +91,9 @@
 }
 
 
-
+ul{
+  padding-inline-start: 0;
+}
 body{
   font-family: 'Manrope';
 }
@@ -243,6 +245,22 @@ nav{
     }
   }
 }
+.about-company_register__check{
+  a {
+    background-color: #1b66ff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
 .about-company__text{
   line-height: 40px;
 }
@@ -255,23 +273,16 @@ a{
     background: white;
     padding: 10px 0;
     border-radius: 5px;
-    &:first-of-type{
-      margin-bottom: 30px;
-    }
-  }
-  img{
-    padding: 0 50px;
+/*    margin-bottom: 30px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }*/
   }
   .about-company_register__check{
     background-color: #1b66ff;
-    margin-top: 30px;
-
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    padding-top: 10px;
   }
+  img{
+    padding: 0 50px;
   }
 }
 .tariff-plans{
@@ -359,6 +370,9 @@ a{
       top: 10%;
       right: -5%;
       max-width: 30%;
+      height: 300px;
+      z-index: 2;
+      overflow: hidden;
       .green-notification-inner{
         border-radius: 4px;
         background-color: #00cc89;
@@ -408,6 +422,14 @@ a{
   .all-what-you-need__print-screen__nav{
     list-style: none;
     color: #838fa9;
+    li{
+      display: inline-block;
+    }
+    img{
+      &:first-of-type {
+        max-width: 100px;
+      }
+    }
     .all-what-you-need__print-screen__nav_item{
       font-size: 10px;
       border-right: 1px ridge #838fa9;
@@ -423,18 +445,29 @@ a{
 
 .all-what-you-need__inner {
   position: relative;
+  border-radius: 20px;
+/*  margin: 10px 50px;*/
   .all-what-you-need_print-screen__content__money-form__drop {
+    display: inline-block;
     width: 12px;
     height: 6px;
     font-size: 5px;
     box-sizing: border-box;
   }
   .all-what-you-need_print-screen__left-nav{
-    ul{
+    ul {
       list-style: none;
       font-size: 10px;
       line-height: 3;
-      color: #838fa9
+      color: #838fa9;
+
+      &:first-of-type {
+        li {
+          &:last-of-type {
+            padding-inline-start: 20px;
+          }
+        }
+      }
     }
     img{
       width: 20px;
@@ -492,8 +525,8 @@ a{
             display: inline-block;
             font-size: 10px;
             margin: 5px;
-            padding: 0;
-            border-radius: 4px;
+            padding: 0 2px;
+            border-radius: 5px;
           }
         }
       }
@@ -520,13 +553,15 @@ a{
   .all-what-you-need__print-screen__right{
       .all-what-you-need__print-screen__right__item{
         border-radius: 20px;
+        div{
+          padding: 10px;
+        }
         &:first-of-type {
           color: white;
           font-weight: 500;
           background-color: #1b66ff;
           div {
             background-color: #518aff;
-            padding: 10px;
             border-radius: 25px;
 
             img {
@@ -757,12 +792,34 @@ footer {
     }
   }
 }
+
 @media screen and(max-width: 1200px) {
   .apps__bg-phone{
     display: none;
 }
 }
+@media screen and(max-width: 992px){
+h1{
+  font-size:30px;
+}
+  .start-invest .start-invest__item div{
+    left:55%;
+  }
+}
+@media screen and(max-width: 768px){
+  .about-company_register{
+    div{
+      &:first-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 @media screen and(max-width: 576px) {
+  .about-company_register img{
+    padding: 0 20px;
+  }
   p[class$="__title"] {
     font-size: 30px;
   }
@@ -797,7 +854,6 @@ footer {
       font-size: 12px;
       line-height: 25px;
     }
-
     .our-value__item {
       padding: 1px;
       max-height: 90px;
@@ -814,7 +870,6 @@ footer {
         font-size: 12px;
         font-weight: normal;
       }
-
       .all-what-you-need_print-screen__left-nav {
 /*        display: none;*/
       }
@@ -897,4 +952,11 @@ footer {
 }
 .transform{
   transform: rotate(180deg);
+}
+
+.test-button{
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  display: inline-block;
 }

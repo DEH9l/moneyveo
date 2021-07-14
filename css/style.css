@@ -48,6 +48,9 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
+ul {
+  padding-inline-start: 0; }
+
 body {
   font-family: 'Manrope'; }
 
@@ -172,6 +175,18 @@ nav:after {
   color: #888d99;
   text-align: right; }
 
+.about-company_register__check a {
+  background-color: #1b66ff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; }
+  .about-company_register__check a:hover {
+    color: white;
+    text-decoration: none; }
+
 .about-company__text {
   line-height: 40px; }
 
@@ -182,19 +197,15 @@ nav:after {
   .about-company_register div {
     background: white;
     padding: 10px 0;
-    border-radius: 5px; }
-    .about-company_register div:first-of-type {
-      margin-bottom: 30px; }
+    border-radius: 5px;
+    /*    margin-bottom: 30px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }*/ }
+  .about-company_register .about-company_register__check {
+    background-color: #1b66ff; }
   .about-company_register img {
     padding: 0 50px; }
-  .about-company_register .about-company_register__check {
-    background-color: #1b66ff;
-    margin-top: 30px; }
-    .about-company_register .about-company_register__check a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-      padding-top: 10px; }
 
 .tariff-plans {
   padding: 25px 30px; }
@@ -267,7 +278,10 @@ nav:after {
     position: absolute;
     top: 10%;
     right: -5%;
-    max-width: 30%; }
+    max-width: 30%;
+    height: 300px;
+    z-index: 2;
+    overflow: hidden; }
     .all-what-you-need__print-screen .all-what-you-need__print-screen__green-notification .green-notification-inner {
       border-radius: 4px;
       background-color: #00cc89;
@@ -304,6 +318,10 @@ nav:after {
 .all-what-you-need__print-screen__nav {
   list-style: none;
   color: #838fa9; }
+  .all-what-you-need__print-screen__nav li {
+    display: inline-block; }
+  .all-what-you-need__print-screen__nav img:first-of-type {
+    max-width: 100px; }
   .all-what-you-need__print-screen__nav .all-what-you-need__print-screen__nav_item {
     font-size: 10px;
     border-right: 1px ridge #838fa9;
@@ -314,8 +332,11 @@ nav:after {
       border-right: none; }
 
 .all-what-you-need__inner {
-  position: relative; }
+  position: relative;
+  border-radius: 20px;
+  /*  margin: 10px 50px;*/ }
   .all-what-you-need__inner .all-what-you-need_print-screen__content__money-form__drop {
+    display: inline-block;
     width: 12px;
     height: 6px;
     font-size: 5px;
@@ -325,6 +346,8 @@ nav:after {
     font-size: 10px;
     line-height: 3;
     color: #838fa9; }
+    .all-what-you-need__inner .all-what-you-need_print-screen__left-nav ul:first-of-type li:last-of-type {
+      padding-inline-start: 20px; }
   .all-what-you-need__inner .all-what-you-need_print-screen__left-nav img {
     width: 20px; }
   .all-what-you-need__inner .all-what-you-need_print-screen__left-nav span {
@@ -358,8 +381,8 @@ nav:after {
         display: inline-block;
         font-size: 10px;
         margin: 5px;
-        padding: 0;
-        border-radius: 4px; }
+        padding: 0 2px;
+        border-radius: 5px; }
 
 .all-what-you-need_print-screen__content__pay-chose {
   font-size: 16px;
@@ -379,13 +402,14 @@ nav:after {
 
 .all-what-you-need__print-screen__right .all-what-you-need__print-screen__right__item {
   border-radius: 20px; }
+  .all-what-you-need__print-screen__right .all-what-you-need__print-screen__right__item div {
+    padding: 10px; }
   .all-what-you-need__print-screen__right .all-what-you-need__print-screen__right__item:first-of-type {
     color: white;
     font-weight: 500;
     background-color: #1b66ff; }
     .all-what-you-need__print-screen__right .all-what-you-need__print-screen__right__item:first-of-type div {
       background-color: #518aff;
-      padding: 10px;
       border-radius: 25px; }
       .all-what-you-need__print-screen__right .all-what-you-need__print-screen__right__item:first-of-type div img {
         filter: brightness(100); }
@@ -538,7 +562,19 @@ footer {
 @media screen and (max-width: 1200px) {
   .apps__bg-phone {
     display: none; } }
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 30px; }
+
+  .start-invest .start-invest__item div {
+    left: 55%; } }
+@media screen and (max-width: 768px) {
+  .about-company_register div:first-of-type {
+    margin-bottom: 0; } }
 @media screen and (max-width: 576px) {
+  .about-company_register img {
+    padding: 0 20px; }
+
   p[class$="__title"] {
     font-size: 30px; }
 
@@ -626,5 +662,11 @@ footer {
 
 .transform {
   transform: rotate(180deg); }
+
+.test-button {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
