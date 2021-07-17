@@ -9,28 +9,6 @@ $(document).ready(function(){
         $(this).toggleClass("transform");
         $(".toogle1").slideToggle("fast");
     });
-});
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tuiriutggut
 
 
 
